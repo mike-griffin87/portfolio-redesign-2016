@@ -15,7 +15,7 @@
 
     <nav ng-class="{isShowing : showNav}" class="main-nav">
       <ul>
-        <li><a href="#">My Work</a></li>
+        <li><a animate-Scroll scroll-To="work-anchor" href="#">My Work</a></li>
         <li><a href="#">About Me</a></li>
         <li><a href="#">Contact Me</a></li>
       </ul>
@@ -31,6 +31,15 @@
       </header>
     </div>
   </div>
+
+  <div id="work-anchor" class="work-container">
+    <div ng-repeat="workItem in workItems" class="work-item">
+      <span class="overlay"></span>
+      <h4>{{workItem.client}}</h4>
+    </div>
+  </div>
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>

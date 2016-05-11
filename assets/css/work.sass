@@ -1,0 +1,48 @@
+.work-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.work-item
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  padding: 1rem
+  width: 33.333%
+  height: 50vh
+  background: pink
+  transition: all .25s ease-in-out
+  overflow: hidden
+  position: relative
+
+  @media screen and (max-width: 975px)
+    width: 50%
+
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,.0)
+    z-index: 1
+
+  h4
+    transition: all .25s ease-in-out
+    z-index: 2
+    font:
+      size: .6rem
+      weight: 400
+
+  &:hover
+    h4
+      font-size: 1rem
+
+    .overlay
+      background: rgba(0,0,0,.4)
+
+@for $i from 1 through 6
+  .work-item-#{$i}
+    background:
+      image: url('/../assets/img/example-#{$i}.jpg')
+      size: cover

@@ -1,5 +1,5 @@
   angular.module('personalWebsite',[])
-  .controller('pwController', ['$scope', PwController])
+  .controller('pwController', ['$scope', '$http', PwController])
   .directive('animateScroll', function(){
     return {
       restrict: 'A',
@@ -17,39 +17,14 @@
 
 
 
-function PwController ($scope){
+function PwController ($scope, $http){
   $scope.test = "Designer";
   $scope.showNav = false;
-  $scope.workItem = [{
-    name: 'Work One',
-    type: 'Design',
-    class: 'work-item-1'
-  },
-  {
-    name: 'Work One',
-    type: 'Design',
-    class: 'work-item-2'
-  },
-  {
-    name: 'Work three',
-    type: 'Design',
-    class: 'work-item-3'
-  },
-  {
-    name: 'Work One',
-    type: 'Design',
-    class: 'work-item-1'
-  },
-  {
-    name: 'Work One',
-    type: 'Design',
-    class: 'work-item-1'
-  },
-  {
-    name: 'Work two',
-    type: 'Design',
-    class: 'work-item-2'
-  }];
+
+  $http.get('personal_website.json').then(function(workData){
+    $scope.workItems = workData.data;
+    $scope.workTotal = $scope.workItems.length;
+  });
 
 }
 

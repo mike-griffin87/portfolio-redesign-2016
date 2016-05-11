@@ -2243,3 +2243,64 @@ h2 {
 
 .designer-h1 {
   font-size: 4.8rem; }
+
+.work-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.work-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+  width: 33.333%;
+  height: 50vh;
+  background: pink;
+  transition: all .25s ease-in-out;
+  overflow: hidden;
+  position: relative; }
+  @media screen and (max-width: 975px) {
+    .work-item {
+      width: 50%; } }
+  .work-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1; }
+  .work-item h4 {
+    transition: all .25s ease-in-out;
+    z-index: 2;
+    font-size: .6rem;
+    font-weight: 400; }
+  .work-item:hover h4 {
+    font-size: 1rem; }
+  .work-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.4); }
+
+.work-item-1 {
+  background-image: url("/../assets/img/example-1.jpg");
+  background-size: cover; }
+
+.work-item-2 {
+  background-image: url("/../assets/img/example-2.jpg");
+  background-size: cover; }
+
+.work-item-3 {
+  background-image: url("/../assets/img/example-3.jpg");
+  background-size: cover; }
+
+.work-item-4 {
+  background-image: url("/../assets/img/example-4.jpg");
+  background-size: cover; }
+
+.work-item-5 {
+  background-image: url("/../assets/img/example-5.jpg");
+  background-size: cover; }
+
+.work-item-6 {
+  background-image: url("/../assets/img/example-6.jpg");
+  background-size: cover; }
