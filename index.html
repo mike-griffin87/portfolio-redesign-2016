@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personalWebsite">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Personal Website</title>
+  <link href="assets/css/main.css" rel="stylesheet"/>
+</head>
+<body ng-controller="pwController">
+
+  <div class="nav-container">
+    <div ng-click="showNav = !showNav" class="hamburger-menu">
+      <span></span>
+    </div>
+
+    <nav ng-class="{isShowing : showNav}" class="main-nav">
+      <ul>
+        <li><a href="#">My Work</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-heading-container">
+      <header>
+        <h1><span class="designer-h1">Designer</span><span class="header-and">and</span>Developer</h1>
+        <p>Hi, I'm Mike. I design for print & web.</p>
+        <div animate-Scroll scroll-To="work-anchor" class="btn work-trigger">See My Work</div>
+      </header>
+    </div>
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="assets/js/min/main.js"></script>
+</body>
+</html>
