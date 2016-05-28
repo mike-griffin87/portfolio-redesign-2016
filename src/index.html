@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Personal Website</title>
-  <link href="assets/css/main.css" rel="stylesheet"/>
+  <link href="main.css" rel="stylesheet"/>
 </head>
 <body ng-controller="pwController">
 
@@ -33,7 +33,7 @@
   </div>
 
   <div id="work-anchor" class="work-container">
-    <div ng-repeat="workItem in workItems" class="work-item">
+    <div ng-repeat="workItem in workItems" class="work-item {{workItem.class}}">
       <span class="overlay"></span>
       <h4>{{workItem.client}}</h4>
     </div>
@@ -44,6 +44,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src="assets/js/min/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

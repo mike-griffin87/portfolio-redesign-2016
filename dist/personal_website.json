@@ -1,12 +1,14 @@
 [
   {
     "client" : "Amorae Bridal",
-    "role" : "Web Design & Development"
+    "role" : "Web Design & Development",
+    "class" : "work-item-1"
   },
 
   {
     "client" : "Sandhill Videography",
-    "role" : "UI Design"
+    "role" : "UI Design",
+    "class" : "work-item-2"
   },
 
   {
