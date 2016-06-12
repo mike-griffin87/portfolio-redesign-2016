@@ -5,15 +5,18 @@ var watch        = require('gulp-watch');
 var uglify       = require('gulp-uglify');
 var browserSync  = require('browser-sync');
 var htmlmin      = require('gulp-htmlmin');
+var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
 
 
 gulp.task('sass', function () {
   return gulp.src('src/css/main.sass')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sass({ outputStyle: 'nested' }))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'))
     .pipe(gulp.dest('src/css/'))
     .pipe(browserSync.stream());
@@ -21,8 +24,10 @@ gulp.task('sass', function () {
 
 gulp.task('js', function() {
   return gulp.src('src/js/**/*.js')
+    .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
     .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });

@@ -1,5 +1,16 @@
 node_modules
 .sass-cache
 .DS_Store
-_site
+/design
 /assets/admin
+
+/dist/main.js.map
+/dist/main.css.map
+src/css/main.css.map
+
+dist/img/example-1.jpg
+dist/img/example-2.jpg
+dist/img/example-3.jpg
+dist/img/example-4.jpg
+dist/img/example-5.jpg
+dist/img/example-6.jpg

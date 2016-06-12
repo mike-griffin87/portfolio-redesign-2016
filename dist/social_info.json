@@ -1,0 +1,32 @@
+[
+  {
+    "fa":"fa-facebook",
+    "url":"https://www.facebook.com/michaelgriffin87",
+    "color":"fb"
+  },
+  {
+    "fa":"fa-dribbble",
+    "url":"https://dribbble.com/Mike-Griffin",
+    "color":"dribbble"
+  },
+  {
+    "fa":"fa-twitter",
+    "url":"https://twitter.com/MikeGriffin87",
+    "color":"twitter"
+  },
+  {
+    "fa":"fa-instagram",
+    "url":"https://www.instagram.com/mikegriffin87/",
+    "color":"instagram"
+  },
+  {
+    "fa":"fa-github",
+    "url":"https://github.com/mike-griffin87",
+    "color":"github"
+  },
+  {
+    "fa":"fa-codepen",
+    "url":"http://codepen.io/mike-grifin/",
+    "color":"codepen"
+  }
+]

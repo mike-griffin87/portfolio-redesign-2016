@@ -1,0 +1,54 @@
+.about
+  width: 80%
+  margin: 0 auto
+  padding: 5rem 0
+
+  h2
+    color: $red
+    font:
+      weight: bold
+
+.social-container
+  width: 70%
+  display: flex
+  margin: 2rem auto 0 auto
+  padding: 2rem 0 0 0
+  text-align: center
+
+.social-icon
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  align-content: center
+  text-align: center
+
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 1rem
+    font-size: 1.6rem
+    color: rgba($grey, .5)
+    cursor: pointer
+    position: relative
+    background: lighten($grey, 60%)
+
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    text-align: center
+    transition: all .15s ease-in-out
+
+    &:hover
+      color: #333
+      background: #eee
+      &.fb
+        color: $facebook!important
+      &.dribbble
+        color: $dribbble!important
+      &.twitter
+        color: $twitter!important
+      &.instagram
+        color: $instagram!important

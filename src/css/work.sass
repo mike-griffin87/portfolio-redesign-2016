@@ -2,18 +2,57 @@
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  overflow: hidden
 
 .work-item
   display: flex
-  justify-content: flex-end
-  align-items: flex-end
+  justify-content: center
+  align-items: center
+  flex-direction: column
   padding: 1rem
   width: 33.333%
-  height: 50vh
+  height: 20rem
+  max-height: 50vh
   background: pink
   transition: all .25s ease-in-out
-  overflow: hidden
   position: relative
+  cursor: pointer
+
+  &:hover .overlay,
+  &:hover h2,
+  &:hover h4,
+  &:hover .case-study-btn
+    transform: translate(0%, 0%)
+    opacity: 1
+    visibility: visible
+
+
+  h2, h4,
+    transition: .25s ease-in-out
+    z-index: 2
+    text-transform: uppercase
+    position: relative
+    opacity: 0
+    visibility: hidden
+  h2
+    transform: translateX(150px)
+    margin: .5rem 0
+    font:
+      size: .8rem
+
+  h4
+    transform: translateX(-150px)
+    font:
+      weight: 500
+
+  & .case-study-btn
+    transform: translateY(150px)
+    cursor: pointer
+    z-index: 2
+    opacity: 0
+    margin: 1rem 0
+    visibility: hidden
+
 
   @media screen and (max-width: 975px)
     width: 50%
@@ -25,24 +64,18 @@
     width: 100%
     height: 100%
     background: rgba(0,0,0,.0)
+    overflow: hidden
+    cursor: pointer
     z-index: 1
 
-  h4
-    transition: all .25s ease-in-out
-    z-index: 2
-    font:
-      size: .6rem
-      weight: 400
-
   &:hover
-    h4
-      font-size: 1rem
-
     .overlay
-      background: rgba(0,0,0,.4)
+      //background: rgba(0,0,0,.6)
+
 
 @for $i from 1 through 6
   .work-item-#{$i}
     background:
       image: url('img/example-#{$i}.jpg')
       size: cover
+      position: center center

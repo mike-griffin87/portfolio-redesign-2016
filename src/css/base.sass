@@ -1,4 +1,12 @@
 $red: #e74c3c
+$grey: #333333
+
+$twitter: #00aced
+$facebook: #3b5998
+$googleplus: #dd4b39
+$linkedin: #007bb6
+$instagram: #7A45B7
+$dribbble: #ea4c89
 
 \:root
   font:
@@ -22,7 +30,7 @@ html
 body
   margin: 0
   padding: 0
-  color: #333
+  color: $grey
   font:
     family: 'lato', sans-serif
     weight: 300
@@ -130,3 +138,11 @@ h2
   padding: .6rem 2.4rem
   color: $red
   cursor: pointer
+  font:
+    family: 'lato', sans-serif
+    weight: 900
+  transition: all .25s ease-in-out
+
+  &:hover
+    background: #eee
+    box-shadow: .2rem .2rem 1rem rgba(34, 34, 34, .5)

@@ -2,31 +2,37 @@
   {
     "client" : "Amorae Bridal",
     "role" : "Web Design & Development",
-    "class" : "work-item-1"
+    "class" : "work-item-1",
+    "btnText":"Case Study"
   },
 
   {
     "client" : "Sandhill Videography",
     "role" : "UI Design",
-    "class" : "work-item-2"
+    "class" : "work-item-2",
+    "btnText":"Case Study"
   },
 
   {
     "client" : "Sandhill Videography",
-    "role" : "UI Design"
+    "role" : "UI Design",
+    "btnText":"Case Study"
   },
   {
     "client" : "Amorae Bridal",
-    "role" : "Web Design & Development"
+    "role" : "Web Design & Development",
+    "btnText":"View Project"
   },
 
   {
     "client" : "Sandhill Videography",
-    "role" : "UI Design"
+    "role" : "UI Design",
+    "btnText":"View Project"
   },
 
   {
     "client" : "Sandhill Videography",
-    "role" : "UI Design"
+    "role" : "UI Design",
+    "btnText":"View Project"
   }
 ]
