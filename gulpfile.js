@@ -7,7 +7,7 @@ var browserSync  = require('browser-sync');
 var htmlmin      = require('gulp-htmlmin');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
-
+var jade = require('gulp-jade');
 
 
 gulp.task('sass', function () {
@@ -39,6 +39,18 @@ gulp.task('html', function(){
   .pipe(browserSync.stream());
 });
 
+gulp.task('templates', function() {
+  var YOUR_LOCALS = {};
+
+  gulp.src('./src/*.jade')
+    .pipe(jade({
+      locals: YOUR_LOCALS
+    }))
+    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('browserSync', function() {
   browserSync({
     server: {
@@ -46,8 +58,9 @@ gulp.task('browserSync', function() {
     }
   });
     gulp.watch('src/*.html', ['html']);
+    gulp.watch('src/*.jade', ['templates']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch(['src/css/*.sass', 'src/css/*.scss'], ['sass']);
 });
 
-gulp.task('default', ['html', 'js', 'sass', 'browserSync']);
+gulp.task('default', ['html', 'js', 'sass', 'templates', 'browserSync']);

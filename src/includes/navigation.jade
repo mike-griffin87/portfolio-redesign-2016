@@ -1,0 +1,11 @@
+.nav-container
+  .hamburger-menu(ng-click='showNav = !showNav', ng-class="{'nav-is-open' : showNav}")
+    span
+  nav.main-nav(ng-class='{isShowing : showNav}')
+    ul
+      li
+        a(animate-scroll='', scroll-to='work-anchor', href='#') My Work
+      li
+        a(animate-scroll='', scroll-to='about-anchor', href='#') About Me
+      li
+        a(animate-scroll='', scroll-to='contact-anchor', href='#') Contact Me

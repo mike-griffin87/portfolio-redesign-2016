@@ -15,20 +15,23 @@ function PwController ($scope, $http){
   });
 
   var BgColors = [
-    'black',
-    'gold',
-    'green',
-    'hotpink',
-    'honeydew'
+    //'black'
+    // 'indigo',
+    // 'darkgoldenrod',
+    // 'royalblue',
+     '#e74c3c'
+    // 'seagreen',
+    // 'salmon',
+    // 'palevioletred'
   ];
 
-  $scope.workItemHover = function randomBgColor (i) {
+  $scope.workItemHover = function randomBgColor (workItem) {
     var randomCounter = Math.floor(Math.random() * BgColors.length);
     var newColor = BgColors[randomCounter];
-    $('.overlay-hover' + i).css({
+    workItem.bgColor = {
       'background-color':newColor,
-      'opacity':'.6'
-    });
+      'opacity':'.8'
+    };
   };
 
   $scope.removeWorkItemHover = function(i) {
@@ -48,15 +51,13 @@ $(document).ready(function(){
     }
   });
   //ANIMATE FOOTER BTN WHEN BROWSER TOP IS AT CERTAIN POINT
-  $(window).scroll(function(){
-    var windowScroll = $(this).scrollTop();
-    if(windowScroll > $('.footer').offset().top - ($(window).height() * 0.6)){
-      $('.email-btn').addClass('is-showing');
-    } else {
-      $('.email-btn').removeClass('is-showing');
-    }
-  });
-
-  //GENERATE RANDOM-ISH BG FOR WORK ITEM
+  // $(window).scroll(function(){
+  //   var windowScroll = $(this).scrollTop();
+  //   if(windowScroll > $('.footer').offset().top - ($(window).height() * 0.6)){
+  //     $('.email-btn').addClass('is-showing');
+  //   } else {
+  //     $('.email-btn').removeClass('is-showing');
+  //   }
+  // });
 
 });

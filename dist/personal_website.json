@@ -16,23 +16,27 @@
   {
     "client" : "Sandhill Videography",
     "role" : "UI Design",
+    "class" : "work-item-3",
     "btnText":"Case Study"
   },
   {
     "client" : "Amorae Bridal",
     "role" : "Web Design & Development",
+    "class" : "work-item-4",
     "btnText":"View Project"
+  },
+
+  {
+    "client" : "Marshmallow & Mammy",
+    "role" : "Design & Development",
+    "class" : "work-item-5",
+    "btnText":"Case Study"
   },
 
   {
     "client" : "Sandhill Videography",
     "role" : "UI Design",
-    "btnText":"View Project"
-  },
-
-  {
-    "client" : "Sandhill Videography",
-    "role" : "UI Design",
+    "class" : "work-item-6",
     "btnText":"View Project"
   }
 ]
