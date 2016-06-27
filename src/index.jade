@@ -5,18 +5,14 @@ html(lang='en', ng-app='personalWebsite')
     meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
     title Personal Website
     link(href='main.css', rel='stylesheet')
+    base(href='/')
   body(ng-controller='pwController')
-    
+  
     include ./includes/navigation.jade
     
-    include ./includes/hero-section.jade
-    
-    include ./includes/work-section.jade
-    
-    include ./includes/about-section.jade
-    
-    include ./includes/footer.jade
+    div(ng-view autoscroll="true")
     
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js')
-    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js')
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js")
     script(src='main.js')

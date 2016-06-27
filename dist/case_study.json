@@ -1,0 +1,67 @@
+[
+  {
+    "_COMMENT":"AMORAE BRIDAL CONTENT",
+    "title":"Amorae Bridal",
+    "titleImage":"/img/amorae/desktop-homepage-mock-up.png",
+    "role":"Design & Development",
+
+    "challengeText":"Amorae Bridal is an award winning bridal shop located in Essex. They needed a fully responsive website that would showcase their products and allow customers to contact them. Their only project requirements was the use of Edwardian script font,  brand colours and to somehow include their clients wedding photos.",
+
+    "parallax":"amorae-parallax",
+    "processHeading":"It begins on paper",
+
+    "processText":"The discovery stage is the most important step in the process. This is where I list out the needs, wants and requirements of the client and work out how many pages/panels are needed. The next step of the discovery process is to wirefram numerous versions of each page until a decision has been made. The final step is to mock up a user flow to envision how the user will use the site and how each journey can differ.",
+
+    "processLeftImg":"/img/amorae/wireframe-sketch.jpg",
+    "processLeftImgCaption":"Landing page discovery process",
+    "processRightImg":"/img/amorae/user-flow-image.jpg",
+    "processRightImgCaption":"User flow and experience",
+
+    "buildProcessHeading":"The Build Process",
+    "buildProcessText":"The development stage revealed that each of the products page will have the same layout. I used a HTML template for the product pages so that any changes to the layout would take place across the entire site.",
+
+    "buildProcessLeftImg":"/img/amorae/code-window.png",
+    "buildProcessRightImg":"/img/amorae/page-in-browser.png",
+
+    "conclusionHeading":"The icing on the cake",
+    "conclusionText":"Bla bla bla",
+    "conclusionImg":"/img/amorae/ipad-animate.gif",
+
+    "footerDesktopImg":"/img/amorae/desktop-mock-up.png",
+    "footerPhoneImg":"/img/amorae/iphone-mock-up.png",
+    "footerIpadImg":"/img/amorae/ipad-mock-up.png"
+  },
+
+  {
+    "_COMMENT":"AMORAE BRIDAL CONTENT",
+    "title":"jfnbdsjfnwdjkfne jwefdj",
+    "titleImage":"/img/amorae/desktop-homepage-mock-up.png",
+    "role":"Design & Development",
+
+    "challengeText":"Amorae Bridal is an award winning bridal shop located in Essex. They needed a fully responsive website that would showcase their products and allow customers to contact them. Their only project requirements was the use of Edwardian script font,  brand colours and to somehow include their clients wedding photos.",
+
+    "parallax":"amorae-parallax",
+    "processHeading":"It begins on paper",
+
+    "processText":"The discovery stage is the most important step in the process. This is where I list out the needs, wants and requirements of the client and work out how many pages/panels are needed. The next step of the discovery process is to wirefram numerous versions of each page until a decision has been made. The final step is to mock up a user flow to envision how the user will use the site and how each journey can differ.",
+
+    "processLeftImg":"/img/amorae/wireframe-sketch.jpg",
+    "processLeftImgCaption":"Landing page discovery process",
+    "processRightImg":"/img/amorae/user-flow-image.jpg",
+    "processRightImgCaption":"User flow and experience",
+
+    "buildProcessHeading":"The Build Process",
+    "buildProcessText":"The development stage revealed that each of the products page will have the same layout. I used a HTML template for the product pages so that any changes to the layout would take place across the entire site.",
+
+    "buildProcessLeftImg":"/img/amorae/code-window.png",
+    "buildProcessRightImg":"/img/amorae/page-in-browser.png",
+
+    "conclusionHeading":"The icing on the cake",
+    "conclusionText":"Bla bla bla",
+    "conclusionImg":"/img/amorae/ipad-animate.gif",
+
+    "footerDesktopImg":"/img/amorae/desktop-mock-up.png",
+    "footerPhoneImg":"/img/amorae/iphone-mock-up.png",
+    "footerIpadImg":"/img/amorae/ipad-mock-up.png"
+  }
+]

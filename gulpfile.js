@@ -42,7 +42,7 @@ gulp.task('html', function(){
 gulp.task('templates', function() {
   var YOUR_LOCALS = {};
 
-  gulp.src('./src/*.jade')
+  gulp.src(['./src/*.jade', './src/partials/*.jade'], {base: './src/'})
     .pipe(jade({
       locals: YOUR_LOCALS
     }))
@@ -59,6 +59,7 @@ gulp.task('browserSync', function() {
   });
     gulp.watch('src/*.html', ['html']);
     gulp.watch('src/*.jade', ['templates']);
+    gulp.watch('src/partials/*.jade', ['templates']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch(['src/css/*.sass', 'src/css/*.scss'], ['sass']);
 });

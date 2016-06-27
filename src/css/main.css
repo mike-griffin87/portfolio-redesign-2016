@@ -645,13 +645,16 @@ footer h5 a {
 .case-study-process {
   width: 100%;
   height: 20rem;
-  background: #e74c3c;
-  background-image: url("/img/amorae/parallax-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
   opacity: 1; }
+
+.case-study-process.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.case-study-process.amorae-parallax {
+  background-image: url("/img/amorae/parallax-bg.jpg"); }
 
 .case-study-process:after {
   content: '';

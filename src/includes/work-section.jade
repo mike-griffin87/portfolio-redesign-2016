@@ -3,4 +3,4 @@ section#work-anchor.work-container
     span.overlay(ng-style='workItem.bgColor')
     h2 {{workItem.client}}
     h4 {{workItem.role}}
-    .btn.case-study-btn {{workItem.btnText}}
+    .btn(ng-click="go('/case-study/' + $index)").case-study-btn {{workItem.btnText}}

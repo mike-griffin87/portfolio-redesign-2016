@@ -6,7 +6,6 @@ angular.module('personalWebsite').directive('animateScroll', function(){
     },
     link: function(scope, $elm, attr){
       $elm.on('click', function(){
-        console.log('click');
         $('html,body').animate({scrollTop: $('#' + scope.scrollTo).offset().top}, 450);
       });
     }

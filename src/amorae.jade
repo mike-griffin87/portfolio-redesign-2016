@@ -9,63 +9,11 @@ html(lang='en', ng-app='personalWebsite')
   
     include ./includes/navigation.jade
     
-    .top-slant
-    section.case-study-header
-      h1 Amorae Bridal
-      img(src='/img/amorae/desktop-homepage-mock-up.png')
-      h2.red Design & Development
-
-    section.case-study-challenge
-      h2.red Challenge
-      p  Amorae Bridal is an award winning bridal shop located in Essex. They needed a fully responsive website that would showcase their products, items on sale and allow customers to contact them directly. Their only project requirments were for the use of Edwardian script font, use of their brand colours and to somehow include their brides photos. 
-      
-    section.case-study-process
-      .it-begins-on-paper
-        h2 It begins on paper
-        .p-container
-          p
-            | The discovery stage is the most important step in the process. This is where I list out the needs, wants and requirements of the client and work out how many pages/panels are needed.
-            br
-            br
-            | The next step of the discovery process is to wirefram numerous versions of each page until a decision has been made. The final step is to mock up a user flow to envision how the user will use the site and how each journey can differ.
-          
-    .userflow
-      .col-50
-        img(src='/img/amorae/wireframe-sketch.jpg')
-        p.caption Landing page wireframes
-      .col-50
-        img(src='/img/amorae/user-flow-image.jpg')
-        p.caption User flow and experience
+    div(ng-view)
     
-    section
-      .build-text-container
-        h2.red The Build Process
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In distinctio reprehenderit similique excepturi quibusdam! Ad qui vel, quos nihil quisquam error, molestias modi rerum corporis nostrum et nemo iste cum!
-    .build-process
-      .build-process-image-container
-        img.left-image(src='/img/amorae/code-window.png')
-        img.right-image(src='/img/amorae/page-in-browser.png')
-    
-        
-    section.conclusion
-      .col-50
-        h2.red Hitting the mark
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione enim harum, illum commodi, at quas rem quod voluptates minus officia, culpa repellendus. Recusandae molestiae atque deleniti consequuntur harum cupiditate possimus!
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aut optio, quod nesciunt dolore esse aperiam expedita corporis culpa inventore sequi temporibus, pariatur, quasi aliquid ut ex fugit tempore ipsa.
-      .col-50
-        img(src='/img/amorae/ipad-animate.gif')
-        
-        
-    section.case-study-footer
-      .footer-image-container
-        img.footer-desktop(src='/img/amorae/desktop-mock-up.png')
-        img.footer-iphone(src='/img/amorae/iphone-mock-up.png')
-        img.footer-ipad(src='/img/amorae/ipad-mock-up.png')
-      .next-prev-buttons
-        .btn Previous Project
-        .btn Next Project
       
   
 script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js')
 script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js')
+script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js")
 script(src='main.js')

@@ -1,7 +1,16 @@
-  angular.module('personalWebsite',[])
-  .controller('pwController', ['$scope', '$http', PwController]);
+  angular.module('personalWebsite',['ngRoute'])
+  .controller('pwController', ['$scope', '$http', '$location', '$routeParams',  PwController])
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+    $routeProvider.
+      when("/", {templateUrl:"/partials/home.html"})
+      .when("/case-study/:caseStudyId", {templateUrl:"/partials/amorae-case-study.html"});
 
-function PwController ($scope, $http){
+      $locationProvider.html5Mode(true);
+
+  }]);
+
+function PwController ($scope, $http, $location, $routeParams){
+  $scope.params=$routeParams;
   $scope.test = "Designer";
   $scope.showNav = false;
 
@@ -14,30 +23,16 @@ function PwController ($scope, $http){
     $scope.social = socialInfo.data;
   });
 
-  var BgColors = [
-    //'black'
-    // 'indigo',
-    // 'darkgoldenrod',
-    // 'royalblue',
-     '#e74c3c'
-    // 'seagreen',
-    // 'salmon',
-    // 'palevioletred'
-  ];
-
-  $scope.workItemHover = function randomBgColor (workItem) {
-    var randomCounter = Math.floor(Math.random() * BgColors.length);
-    var newColor = BgColors[randomCounter];
-    workItem.bgColor = {
-      'background-color':newColor,
-      'opacity':'.8'
+  $http.get('case_study.json').then(function(caseStudyInfo){
+    $scope.cs = caseStudyInfo.data;
+  });
+console.log('hello');
+  $scope.go = function(path) {
+      $location.path(path);
     };
-  };
 
-  $scope.removeWorkItemHover = function(i) {
-    $('.overlay-hover' + i).css({'background-color':'rgba(0,0,0, .0)'});
-  };
-}
+
+} //PwController Close
 
 $(document).ready(function(){
 
