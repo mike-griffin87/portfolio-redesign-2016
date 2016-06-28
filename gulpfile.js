@@ -8,6 +8,8 @@ var htmlmin      = require('gulp-htmlmin');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var jade = require('gulp-jade');
+var historyApiFallback = require('connect-history-api-fallback');
+
 
 
 gulp.task('sass', function () {
@@ -54,7 +56,8 @@ gulp.task('templates', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'dist/'
+      baseDir: ['dist/'],
+      middleware: [ historyApiFallback() ]
     }
   });
     gulp.watch('src/*.html', ['html']);

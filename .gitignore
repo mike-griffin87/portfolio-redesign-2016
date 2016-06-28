@@ -7,3 +7,4 @@ node_modules
 /dist/main.js.map
 /dist/main.css.map
 src/css/main.css.map
+.idea/
