@@ -1,0 +1,81 @@
+// .modal-overlay
+//   position: fixed
+//   top: 0
+//   left: 0
+//   background: rgba($grey, .55)
+//   width: 100vw
+//   height: 100vh
+//   z-index: 100
+//   opacity: 1
+
+  &.is-showing
+    opacity: 1
+    display: flex
+
+.modal-container
+  background: rgba(black, .75)
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 100
+  pointer-events: none
+  transition: all .25s ease-in-out
+  opacity: 0
+  cursor: pointer
+
+  &.is-showing
+    pointer-events: auto
+    opacity: 1
+
+.modal
+  z-index: 101
+  position: relative
+  width: 33%
+  transition: all .6s cubic-bezier(0.08, 0.66, 0.46, 1.28)
+  opacity: 0
+  transform-origin: center
+  transform: translateX(-100%) scale(.4) rotate(-180deg)
+
+  @media screen and (max-width: 1080px)
+    width: 45%
+
+  @media screen and (max-width: 780px)
+    width: 55%
+
+  @media screen and (max-width: 480px)
+    width: 65%
+
+  &.copan
+    width: 60%
+
+    @media screen and (max-width: 680px)
+      width: 70%
+
+  &.is-showing
+    transition: all .6s cubic-bezier(0.08, 0.66, 0.46, 1.28)
+    opacity: 1
+    transform: translateX(0px) scale(1) rotate(0)
+
+  img
+    width: 100%
+    height: auto
+
+  .close-modal img
+    position: absolute
+    top: -1.2rem
+    left: calc(100% - 1.2rem)
+    width: 2.5rem
+    z-index: 102
+    transition: all .5s cubic-bezier(0.08, 0.66, 0.46, 1.28) .6s
+    cursor: pointer
+    transform: scale(.1) rotate(-45deg)
+    opacity: 0
+
+    &.is-showing
+      transform: scale(1) rotate(0)
+      opacity: 1

@@ -1,42 +1,50 @@
 [
   {
+    "type":"case-study",
     "client" : "Amorae Bridal",
     "role" : "Web Design & Development",
     "class" : "work-item-1",
-    "btnText":"Case Study"
+    "btnText":"View Case Study"
   },
 
   {
+    "type":"case-study",
     "client" : "Sandhill Videography",
     "role" : "UI Design",
     "class" : "work-item-2",
-    "btnText":"Case Study"
+    "btnText":"View Case Study"
   },
 
   {
-    "client" : "Sandhill Videography",
-    "role" : "UI Design",
+    "type":"cuban-wednesdays",
+    "imagePath":"img/cuban-wednesdays.jpg",
+    "client" : "Cuban Wednesdays",
+    "role" : "Design",
     "class" : "work-item-3",
-    "btnText":"Case Study"
+    "btnText":"View Artwork"
   },
   {
-    "client" : "Amorae Bridal",
+    "type":"case-study",
+    "client" : "Marshmallow & Mammy",
     "role" : "Web Design & Development",
     "class" : "work-item-4",
-    "btnText":"View Project"
+    "btnText":"View Case Study"
   },
 
   {
-    "client" : "Marshmallow & Mammy",
-    "role" : "Design & Development",
+    "type":"crafty-sundays",
+    "imagePath":"img/cuban-wednesdays.jpg",
+    "client" : "Crafty Sundays",
+    "role" : "Design",
     "class" : "work-item-5",
-    "btnText":"Case Study"
+    "btnText":"View Artwork"
   },
 
   {
-    "client" : "Sandhill Videography",
-    "role" : "UI Design",
+    "type":"case-study",
+    "client" : "Slievemore Clinic",
+    "role" : "Web Design & Development",
     "class" : "work-item-6",
-    "btnText":"View Project"
+    "btnText":"View Case Study"
   }
 ]

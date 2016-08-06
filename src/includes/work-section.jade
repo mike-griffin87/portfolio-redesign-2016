@@ -1,6 +1,10 @@
-section#work-anchor.work-container
-  .work-item(ng-repeat='workItem in workItems', ng-mouseenter='workItemHover(workItem)', ng-mouseleave='workItem.bgColor = {}', class='{{workItem.class}}')
-    span.overlay(ng-style='workItem.bgColor')
-    h2 {{workItem.client}}
-    h4 {{workItem.role}}
-    .btn(ng-click="go('/case-study/' + $index)").case-study-btn {{workItem.btnText}}
+html
+  body
+    section#work-anchor.work-container
+      .work-item(ng-repeat='workItem in workItems', ng-mouseenter='workItemHover(workItem)', ng-mouseleave='workItem.bgColor = {}', class='{{workItem.class}}')
+        span.overlay(ng-style='workItem.bgColor')
+        h2 {{workItem.client}}
+        h4 {{workItem.role}}
+        .btn.case-study-btn(ng-if="workItem.type === 'case-study'", ng-click="go('/case-study/' + $index)") {{workItem.btnText}}
+        .btn.case-study-btn(ng-if="workItem.type === 'cuban-wednesdays'", ng-click='triggerCubanModal()'){{workItem.btnText}}
+        .btn.case-study-btn(ng-if="workItem.type === 'crafty-sundays'", ng-click='triggerCopanModal()'){{workItem.btnText}}

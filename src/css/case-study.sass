@@ -1,5 +1,5 @@
 .top-slant
-  background: $red
+  //background: $red
   width: 100%
   left: 0
   top: 0
@@ -72,7 +72,7 @@
 
 .case-study-process
   width: 100%
-  height: 20rem
+  height: 18rem
   position: relative
   opacity: 1
 
@@ -86,14 +86,21 @@
     background:
       image: url('/img/amorae/parallax-bg.jpg')
 
+  &.marshmallow-parallax
+    background:
+      image: url('/img/marshmallow-and-mammy/parallax-bg.jpg')
+
+  &.slievemore-parallax
+    background:
+      image: url('/img/slievemore/slievemore-parallax.jpg')
 
   &:after
     content: ''
     width: 100%
     height: 100%
     display: block
-    background: rgba($red, .7)
     position: absolute
+    background: rgba($red, .1)
     top: 0
     left: 0
 
@@ -165,7 +172,6 @@
   width: 100%
   height: 15rem
   margin: 6rem 0
-  background: $red
   position: relative
 
   @media screen and (max-width: 980px)
@@ -189,7 +195,7 @@
       right: 0
       top: -2.6rem
       &:hover
-        transform: scale(.95)
+        //transform: scale(.95)
 
     .left-image
       left: 0
@@ -197,7 +203,7 @@
       z-index: 1
 
       &:hover
-        transform: scale(.95)
+        //transform: scale(.95)
         z-index: 3
 
 .conclusion
@@ -219,7 +225,7 @@
       width: 100%
 
 .case-study-footer
-  background: $red
+  background:
     image: url('img/icon-pattern-footer.png')
   padding: 15rem 0 8rem 0
   margin-top: 15rem
@@ -272,3 +278,11 @@
 
       @media screen and (max-width: 640px)
         margin: 1rem
+
+.conclusion-image-cption
+  padding: .4rem .7rem
+  margin: 0
+  color: $grey
+  font:
+    size: .7rem
+    weight: bold

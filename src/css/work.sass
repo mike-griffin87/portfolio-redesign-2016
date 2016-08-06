@@ -13,12 +13,12 @@
   width: 33.333%
   height: 20rem
   max-height: 50vh
-  background: pink
   transition: all .25s ease-in-out
   position: relative
   cursor: pointer
 
   &:hover .overlay,
+    background: rgba($red, .9)
   &:hover h2,
   &:hover h4,
   &:hover .case-study-btn
@@ -34,7 +34,7 @@
     position: relative
     opacity: 0
     visibility: hidden
-    
+
   h2
     transform: translateX(150px)
     margin: .5rem 0
@@ -58,25 +58,23 @@
   @media screen and (max-width: 975px)
     width: 50%
 
+  @media screen and (max-width: 600px)
+    width: 100%
+
   .overlay
     position: absolute
     top: 0
     left: 0
     width: 100%
     height: 100%
-    background: rgba(0,0,0,.0)
     overflow: hidden
     cursor: pointer
     z-index: 1
-
-  &:hover
-    .overlay
-      //background: rgba(0,0,0,.6)
-
+    transition: all .1s ease-in-out
 
 @for $i from 1 through 6
   .work-item-#{$i}
     background:
-      image: url('img/example-#{$i}.jpg')
+      image: url('img/work-thumb-#{$i}.jpg')
       size: cover
       position: center center

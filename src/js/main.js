@@ -26,11 +26,18 @@ function PwController ($scope, $http, $location, $routeParams){
   $http.get('case_study.json').then(function(caseStudyInfo){
     $scope.cs = caseStudyInfo.data;
   });
-console.log('hello');
+
   $scope.go = function(path) {
       $location.path(path);
     };
 
+  $scope.triggerCubanModal = function() {
+    $('.modal-container.cuban, .modal, .close-modal img').toggleClass('is-showing');
+  };
+
+  $scope.triggerCopanModal = function() {
+    $('.modal-container.copan, .modal, .close-modal img').toggleClass('is-showing');
+  };
 
 } //PwController Close
 
@@ -45,14 +52,5 @@ $(document).ready(function(){
         'background':'rgba(255,255,255, 1)'});
     }
   });
-  //ANIMATE FOOTER BTN WHEN BROWSER TOP IS AT CERTAIN POINT
-  // $(window).scroll(function(){
-  //   var windowScroll = $(this).scrollTop();
-  //   if(windowScroll > $('.footer').offset().top - ($(window).height() * 0.6)){
-  //     $('.email-btn').addClass('is-showing');
-  //   } else {
-  //     $('.email-btn').removeClass('is-showing');
-  //   }
-  // });
 
 });

@@ -1,7 +1,19 @@
 
 include ../includes/hero-section.jade
 
-include ../includes/work-section.jade
+include ../includes/work-section.jade  
+.modal-container.cuban
+  .modal
+    img(ng-src='img/cuban-wednesdays.jpg')
+    .close-modal
+      img(ng-click="triggerCubanModal()" ng-src='img/close.svg')
+      
+.modal-container.copan
+  .modal.copan
+    img(ng-src='img/copan-craft-beer.jpg')
+    .close-modal
+      img(ng-click="triggerCopanModal()" ng-src='img/close.svg')
+
 
 include ../includes/about-section.jade
 
