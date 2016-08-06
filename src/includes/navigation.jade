@@ -4,8 +4,9 @@
   nav.main-nav(ng-class='{isShowing : showNav}')
     ul
       li
-        a(animate-scroll='', scroll-to='http://localhost:3000/work-anchor', href='#') Work
+        a(ng-click="go('/')" , animate-scroll='', scroll-to='work-anchor', href='#') Work
       li
-        a(href='#about-anchor') About 
+        a(href='#about-anchor') About
       li
         a(href='#') Contact
+

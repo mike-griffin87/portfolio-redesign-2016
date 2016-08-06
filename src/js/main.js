@@ -29,7 +29,7 @@ function PwController ($scope, $http, $location, $routeParams){
 
   $scope.go = function(path) {
       $location.path(path);
-    };
+  };
 
   $scope.triggerCubanModal = function() {
     $('.modal-container.cuban, .modal, .close-modal img').toggleClass('is-showing');
@@ -37,6 +37,36 @@ function PwController ($scope, $http, $location, $routeParams){
 
   $scope.triggerCopanModal = function() {
     $('.modal-container.copan, .modal, .close-modal img').toggleClass('is-showing');
+  };
+
+  $scope.nextWorkItem = function() {
+    var routeId = $scope.params.caseStudyId;
+    routeId++;
+    
+    if(routeId === 2 || routeId === 4) {
+      routeId++;
+    }
+    // if the end of all items
+    if(routeId >= 6) {
+      routeId = 0;
+    }
+
+    $scope.go('/case-study/' + routeId);
+  };
+
+  $scope.previousWorkItem = function() {
+    var routeId = $scope.params.caseStudyId;
+    routeId--;
+
+    if(routeId === 2 || routeId === 4) {
+      routeId--;
+    }
+    // if the end of all items
+    if(routeId <= -1) {
+      routeId = 5;
+    }
+
+    $scope.go('/case-study/' + routeId);
   };
 
 } //PwController Close

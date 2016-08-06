@@ -46,5 +46,5 @@ section.case-study-footer(class="{{cs[params.caseStudyId].bgColor}}")
     img.footer-iphone(ng-if="cs[params.caseStudyId].footerPhoneImg" src='{{cs[params.caseStudyId].footerPhoneImg}}')
     img.footer-ipad(ng-if="cs[params.caseStudyId].footerIpadImg" src='{{cs[params.caseStudyId].footerIpadImg}}')
   .next-prev-buttons
-    .btn Previous Project
-    .btn Next Project
+    .btn(ng-click="previousWorkItem()") Previous Project
+    .btn(ng-click="nextWorkItem()") Next Project
