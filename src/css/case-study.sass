@@ -1,5 +1,4 @@
 .top-slant
-  //background: $red
   width: 100%
   left: 0
   top: 0
@@ -124,6 +123,9 @@
       padding: 1rem
       box-shadow: 0px 0px 1rem $grey
 
+      @media screen and (max-width: 480px)
+        background: rgba(white,.85)
+
 .userflow
   display: flex
   width: 80%
@@ -161,12 +163,14 @@
     width: 100%
 
 .build-text-container
-  width: 60%
+  width: 90%
   margin: auto
   display: block
   text-align: center
   @media screen and (max-width: 768px)
     width: 80%
+  @media screen and (max-width: 480px)
+    text-align: left
 
 .build-process
   width: 100%

@@ -59,11 +59,11 @@
 
 @media screen and (max-width: 768px) {
   :root {
-    font-size: 16px; } }
+    font-size: 18px; } }
 
 @media screen and (max-width: 380px) {
   :root {
-    font-size: 12px; } }
+    font-size: 14px; } }
 
 /* apply a natural box layout model to all elements, but allowing components to change - read more @ http://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
 html {
@@ -87,6 +87,10 @@ h1, h2, h3, h4, h5 {
 h2 {
   font-weight: bold; }
 
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem; } }
+
 h5 {
   font-size: .8rem;
   font-weight: 500; }
@@ -96,6 +100,10 @@ a {
 
 p {
   font-size: 1rem; }
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 1.3rem; } }
 
 .hamburger-menu {
   width: 1.5rem;
@@ -451,6 +459,14 @@ nav ul li a:hover {
   margin: 0 auto;
   padding: 5rem 0; }
 
+@media screen and (max-width: 768px) {
+  .about {
+    width: 75%; } }
+
+@media screen and (max-width: 480px) {
+  .about {
+    width: 90%; } }
+
 .about h2 {
   color: #e74c3c;
   font-weight: bold; }
@@ -705,6 +721,10 @@ footer h5 a {
   padding: 1rem;
   box-shadow: 0px 0px 1rem #333333; }
 
+@media screen and (max-width: 480px) {
+  .case-study-process .it-begins-on-paper p {
+    background: rgba(255, 255, 255, 0.85); } }
+
 .userflow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,7 +770,7 @@ footer h5 a {
   width: 100%; }
 
 .build-text-container {
-  width: 60%;
+  width: 90%;
   margin: auto;
   display: block;
   text-align: center; }
@@ -758,6 +778,10 @@ footer h5 a {
 @media screen and (max-width: 768px) {
   .build-text-container {
     width: 80%; } }
+
+@media screen and (max-width: 480px) {
+  .build-text-container {
+    text-align: left; } }
 
 .build-process {
   width: 100%;
