@@ -85,55 +85,6 @@ p
   @media screen and (max-width: 480px)
     font-size: 1.3rem
 
-// .hamburger-menu
-//   width: 1.5rem
-//   height: 1.1rem
-//   position: fixed
-//   top: calc(1rem - 1rem / 2)
-//   right: 1rem
-//   display: flex
-//   align-items: center
-//   z-index: 5
-//   cursor: pointer
-//   transition: all .2s ease-in-out
-//
-//   &:hover
-//     span, span:after, span:before
-//       transition: all .2s ease-in-out
-//       background: lighten($red, 20%)
-//
-//   &.nav-is-open
-//     width: 1.4rem
-//     height: 1rem
-//     span
-//       background: transparent
-//
-//       &:before, &:after
-//         top: calc(25% + .24rem)
-//         transform-origin: center
-//       &:before
-//         transform: rotate(45deg)
-//       &:after
-//         transform: rotate(-45deg)
-//
-//   span
-//     width: 100%
-//     height: .24rem
-//     background: lighten($red, 10%)
-//     display: block
-//
-//     &:before, &:after
-//       content: ''
-//       width: 100%
-//       height: .2rem
-//       background: lighten($red, 10%)
-//       position: absolute
-//
-//     &:before
-//       top: 0
-//     &:after
-//       bottom: 0
-
 .hamburger
   right: .75rem
   top: .2rem
@@ -170,6 +121,8 @@ p
       transform: rotate(-45deg)
       width: 60%
 
+      @media screen and (max-width: 380px)
+        top: -.7rem
   span
     text-align: center
     display: block
@@ -206,6 +159,9 @@ nav
   &.isShowing
     transform: translateY(0)
     opacity: 1
+
+  @media screen and (max-width: 780px)
+    justify-content: flex-start
 
   ul
     list-style: none

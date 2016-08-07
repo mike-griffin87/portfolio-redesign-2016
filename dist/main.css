@@ -154,6 +154,10 @@ p {
   transform: rotate(-45deg);
   width: 60%; }
 
+@media screen and (max-width: 380px) {
+  .hamburger .bottom-bar.nav-is-open {
+    top: -.7rem; } }
+
 .hamburger span {
   text-align: center;
   display: block;
@@ -198,6 +202,12 @@ nav.isShowing {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1; }
+
+@media screen and (max-width: 780px) {
+  nav {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; } }
 
 nav ul {
   list-style: none;
