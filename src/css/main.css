@@ -329,6 +329,12 @@ nav ul li a:hover {
   position: relative;
   cursor: pointer; }
 
+@media screen and (max-width: 600px) {
+  .work-item {
+    border-bottom: 4px solid white; }
+  .work-item .overlay {
+    background: rgba(0, 0, 0, 0.75); } }
+
 .work-item:hover .overlay {
   background: rgba(231, 76, 60, 0.9); }
 
@@ -355,10 +361,24 @@ nav ul li a:hover {
   margin: .5rem 0;
   font-size: .8rem; }
 
+@media screen and (max-width: 600px) {
+  .work-item h2 {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+    visibility: visible; } }
+
 .work-item h4 {
   -webkit-transform: translateX(-150px);
   transform: translateX(-150px);
   font-weight: 500; }
+
+@media screen and (max-width: 600px) {
+  .work-item h4 {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+    visibility: visible; } }
 
 .work-item .case-study-btn {
   -webkit-transform: translateY(150px);
@@ -368,6 +388,13 @@ nav ul li a:hover {
   opacity: 0;
   margin: 1rem 0;
   visibility: hidden; }
+
+@media screen and (max-width: 600px) {
+  .work-item .case-study-btn {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+    visibility: visible; } }
 
 @media screen and (max-width: 975px) {
   .work-item {

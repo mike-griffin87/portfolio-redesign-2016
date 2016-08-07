@@ -17,6 +17,11 @@
   position: relative
   cursor: pointer
 
+  @media screen and (max-width: 600px)
+    border-bottom: 4px solid white
+    .overlay
+      background: rgba(black, .75)
+
   &:hover .overlay,
     background: rgba($red, .9)
   &:hover h2,
@@ -41,10 +46,20 @@
     font:
       size: .8rem
 
+    @media screen and (max-width: 600px)
+      transform: translate(0%, 0%)
+      opacity: 1
+      visibility: visible
+
   h4
     transform: translateX(-150px)
     font:
       weight: 500
+
+    @media screen and (max-width: 600px)
+      transform: translate(0%, 0%)
+      opacity: 1
+      visibility: visible
 
   & .case-study-btn
     transform: translateY(150px)
@@ -54,6 +69,10 @@
     margin: 1rem 0
     visibility: hidden
 
+    @media screen and (max-width: 600px)
+      transform: translate(0%, 0%)
+      opacity: 1
+      visibility: visible
 
   @media screen and (max-width: 975px)
     width: 50%
