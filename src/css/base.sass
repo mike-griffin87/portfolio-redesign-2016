@@ -8,6 +8,8 @@ $linkedin: #007bb6
 $instagram: #7A45B7
 $dribbble: #ea4c89
 
+$menuBg: lighten($red, 10%)
+
 .lightskyblue-bg
   background:  MediumTurquoise
 
@@ -83,54 +85,107 @@ p
   @media screen and (max-width: 480px)
     font-size: 1.3rem
 
-.hamburger-menu
-  width: 1.5rem
-  height: 1.1rem
-  position: fixed
-  top: calc(1rem - 1rem / 2)
-  right: 1rem
+// .hamburger-menu
+//   width: 1.5rem
+//   height: 1.1rem
+//   position: fixed
+//   top: calc(1rem - 1rem / 2)
+//   right: 1rem
+//   display: flex
+//   align-items: center
+//   z-index: 5
+//   cursor: pointer
+//   transition: all .2s ease-in-out
+//
+//   &:hover
+//     span, span:after, span:before
+//       transition: all .2s ease-in-out
+//       background: lighten($red, 20%)
+//
+//   &.nav-is-open
+//     width: 1.4rem
+//     height: 1rem
+//     span
+//       background: transparent
+//
+//       &:before, &:after
+//         top: calc(25% + .24rem)
+//         transform-origin: center
+//       &:before
+//         transform: rotate(45deg)
+//       &:after
+//         transform: rotate(-45deg)
+//
+//   span
+//     width: 100%
+//     height: .24rem
+//     background: lighten($red, 10%)
+//     display: block
+//
+//     &:before, &:after
+//       content: ''
+//       width: 100%
+//       height: .2rem
+//       background: lighten($red, 10%)
+//       position: absolute
+//
+//     &:before
+//       top: 0
+//     &:after
+//       bottom: 0
+
+.hamburger
+  right: .75rem
+  top: .2rem
   display: flex
-  align-items: center
-  z-index: 5
+  flex-direction: column
+  justify-content: center
   cursor: pointer
-  transition: all .2s ease-in-out
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  position: fixed
+  z-index: 5
 
-  &:hover
-    span, span:after, span:before
-      transition: all .2s ease-in-out
-      background: lighten($red, 20%)
+  .top-bar,
+  .bottom-bar
+    margin: auto
+    display: block
+    position: relative
+    width: 100%
+    height: .2rem
+    background: $menuBg
+    transition: all .45s cubic-bezier(0.45,-0.07, 0.47, 1.71)
+    top: 0
 
-  &.nav-is-open
-    width: 1.4rem
-    height: 1rem
-    span
-      background: transparent
+  .top-bar
+    &.nav-is-open
+      top: .8rem
+      transform: rotate(45deg)
+      width: 60%
 
-      &:before, &:after
-        top: calc(25% + .24rem)
-        transform-origin: center
-      &:before
-        transform: rotate(45deg)
-      &:after
-        transform: rotate(-45deg)
+  .bottom-bar
+    &.nav-is-open
+      top: -.55rem
+      transform: rotate(-45deg)
+      width: 60%
 
   span
-    width: 100%
-    height: .24rem
-    background: lighten($red, 10%)
+    text-align: center
     display: block
+    position: relative
+    color: $menuBg
+    font-weight: bold
+    width: 100%
+    cursor: pointer
+    transition: all .25s cubic-bezier(0.45,-0.07, 0.47, 1.71)
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
 
-    &:before, &:after
-      content: ''
-      width: 100%
-      height: .2rem
-      background: lighten($red, 10%)
-      position: absolute
-
-    &:before
-      top: 0
-    &:after
-      bottom: 0
+    &.nav-is-open
+      opacity: 0
+      transform: translateX(10px)
 
 .nav-container
   position: absolute
