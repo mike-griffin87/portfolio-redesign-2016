@@ -48,8 +48,8 @@
 .royalblue-bg {
   background: royalblue; }
 
-.seagreen-bg {
-  background: SandyBrown; }
+.plum-bg {
+  background: Plum; }
 
 .red {
   color: #e74c3c; }
@@ -689,6 +689,9 @@ footer h5 a {
 
 .case-study-process.slievemore-parallax {
   background-image: url("/img/slievemore/slievemore-parallax.jpg"); }
+
+.case-study-process.sandhills-parallax {
+  background-image: url("/img/sandhills/parallax-bg.jpg"); }
 
 .case-study-process:after {
   content: '';

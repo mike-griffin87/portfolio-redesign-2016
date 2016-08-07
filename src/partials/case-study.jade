@@ -22,11 +22,11 @@ section.case-study-process.parallax(class="{{cs[params.caseStudyId].parallax}}")
     img(ng-src='{{cs[params.caseStudyId].processRightImg}}')
     p.caption {{cs[params.caseStudyId].processRightImgCaption}}
 
-section
+section(ng-if="cs[params.caseStudyId].caseStudyFooter")
   .build-text-container
     h2.red {{cs[params.caseStudyId].buildProcessHeading}}
     p  {{cs[params.caseStudyId].buildProcessText}}
-.build-process(class="{{cs[params.caseStudyId].bgColor}}")
+.build-process(ng-if="cs[params.caseStudyId].caseStudyFooter")
   .build-process-image-container
     img.left-image(ng-src='{{cs[params.caseStudyId].buildProcessLeftImg}}')
     img.right-image(ng-src='{{cs[params.caseStudyId].buildProcessRightImg}}')

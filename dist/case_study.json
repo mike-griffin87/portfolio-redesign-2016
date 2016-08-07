@@ -35,27 +35,24 @@
   },
 
   {
-    "bgColor":"seagreen-bg",
+    "bgColor":"plum-bg",
     "title":"Sandhills Videography",
     "titleImage":"/img/sandhills/title-image.png",
     "role":"UI/UX Design",
 
-    "challengeText":"Slievemore Clinic is a modern, multi-disciplinary healthcare facility based in Ireland. The goal for this project was to create an easy to use and friendly experience for all their users. Slievemore houses 16+ clinics that are all accessed by different types of users, This was important to keep in mind during the discovery stage. Slievemore also request a simple content management system that will allow them to keep their website up to date.",
+    "challengeText":"",
 
-    "parallax":"slievemore-parallax",
+    "parallax":"sandhills-parallax",
     "processHeading":"Discovery Stage",
-    "processText":"Like the majority of my projects this one started on pen and paper. It was very important to the Slievemore team to have a mobile friendly website. With this in mind I decided take the 'mobile first' approach and start wireframing the mobile version of the site and build on it with each revision.",
+    "processText":"",
 
-    "processLeftImg":"/img/slievemore/mobile-first-sketch.jpg",
-    "processLeftImgCaption":"Mobile first wireframes",
-    "processRightImg":"/img/slievemore/desktop-sketch.jpg",
-    "processRightImgCaption":"Early desktop wireframes",
+    "processLeftImg":"/img/sandhills/wireframe.jpg",
+    "processLeftImgCaption":"Wireframes",
+    "processRightImg":"/img/sandhills/design-sketch-app.jpg",
+    "processRightImgCaption":"Designed using Sketch",
 
     "buildProcessHeading":"The Build Process",
     "buildProcessText":"I built this project using Wordpress and chose the Divi theme because of how simple it's 'drag & drop' builder is for clients. At Slievemore they have both experience and inexperienced staff that will maintain the website so these tools are beneficial to all.",
-
-    "buildProcessLeftImg":"/img/slievemore/build-process-left.png",
-    "buildProcessRightImg":"/img/slievemore/build-process-right.png",
 
     "conclusionHeading":"Conclusion",
     "conclusionText":"Our goals were reached! Slievemore are extremely happy with their new website and we met all their requirments. They have found it super easy to edit content and have had a huge insrease in client engagment. This project was so successful we're now working on a new project together.",
@@ -63,9 +60,7 @@
     "conclusionImgCaption":"Slievemore photo gallery"
   },
 
-  {
-    "imageUrl":"image-path-here"
-  },
+  {},
 
   {
     "bgColor":"lightskyblue-bg",
@@ -101,9 +96,7 @@
     "footerIpadImg":"/img/marshmallow-and-mammy/footer-ipad-mock-up.png"
   },
 
-  {
-    "imageUrl":"image-path-here"
-  },
+  {},
 
   {
     "bgColor":"royalblue-bg",
