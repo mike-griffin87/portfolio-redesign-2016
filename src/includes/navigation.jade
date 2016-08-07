@@ -4,9 +4,10 @@
   nav.main-nav(ng-class='{isShowing : showNav}')
     ul
       li
+        a(ng-click="go('/')" , href='#') Home
+      li
         a(ng-click="go('/')" , animate-scroll='', scroll-to='work-anchor', href='#') Work
       li
-        a(href='#about-anchor') About
+        a(ng-click="go('/')" , animate-scroll='', scroll-to='about-anchor', href='#') About
       li
         a(href='#') Contact
-

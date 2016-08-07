@@ -1,7 +1,7 @@
 .top-slant(class="{{cs[params.caseStudyId].bgColor}}")
 section.case-study-header
   h1 {{cs[params.caseStudyId].title}}
-  img(src='{{cs[params.caseStudyId].titleImage}}')
+  img(ng-src='{{cs[params.caseStudyId].titleImage}}')
   h2.red {{cs[params.caseStudyId].role}}
 
 section.case-study-challenge
@@ -16,10 +16,10 @@ section.case-study-process.parallax(class="{{cs[params.caseStudyId].parallax}}")
 
 .userflow
   .col-50
-    img(src='{{cs[params.caseStudyId].processLeftImg}}')
+    img(ng-src='{{cs[params.caseStudyId].processLeftImg}}')
     p.caption {{cs[params.caseStudyId].processLeftImgCaption}}
   .col-50
-    img(src='{{cs[params.caseStudyId].processRightImg}}')
+    img(ng-src='{{cs[params.caseStudyId].processRightImg}}')
     p.caption {{cs[params.caseStudyId].processRightImgCaption}}
 
 section
@@ -28,23 +28,23 @@ section
     p  {{cs[params.caseStudyId].buildProcessText}}
 .build-process(class="{{cs[params.caseStudyId].bgColor}}")
   .build-process-image-container
-    img.left-image(src='{{cs[params.caseStudyId].buildProcessLeftImg}}')
-    img.right-image(src='{{cs[params.caseStudyId].buildProcessRightImg}}')
+    img.left-image(ng-src='{{cs[params.caseStudyId].buildProcessLeftImg}}')
+    img.right-image(ng-src='{{cs[params.caseStudyId].buildProcessRightImg}}')
 
 section.conclusion(ng-if="cs[params.caseStudyId].caseStudyFooter")
   .col-50
     h2.red {{cs[params.caseStudyId].conclusionHeading}}
     p  {{cs[params.caseStudyId].conclusionText}}
   .col-50
-    img(src='{{cs[params.caseStudyId].conclusionImg}}')
+    img(-ng-src='{{cs[params.caseStudyId].conclusionImg}}')
     p.conclusion-image-cption {{cs[params.caseStudyId].conclusionImgCaption}}
 
 
 section.case-study-footer(class="{{cs[params.caseStudyId].bgColor}}")
   .amorae-footer-image-container
-    img.footer-desktop(ng-if="cs[params.caseStudyId].footerDesktopImg" src='{{cs[params.caseStudyId].footerDesktopImg}}')
-    img.footer-iphone(ng-if="cs[params.caseStudyId].footerPhoneImg" src='{{cs[params.caseStudyId].footerPhoneImg}}')
-    img.footer-ipad(ng-if="cs[params.caseStudyId].footerIpadImg" src='{{cs[params.caseStudyId].footerIpadImg}}')
+    img.footer-desktop(ng-if="cs[params.caseStudyId].footerDesktopImg" ng-src='{{cs[params.caseStudyId].footerDesktopImg}}')
+    img.footer-iphone(ng-if="cs[params.caseStudyId].footerPhoneImg" ng-src='{{cs[params.caseStudyId].footerPhoneImg}}')
+    img.footer-ipad(ng-if="cs[params.caseStudyId].footerIpadImg" ng-src='{{cs[params.caseStudyId].footerIpadImg}}')
   .next-prev-buttons
     .btn(ng-click="previousWorkItem()") Previous Project
     .btn(ng-click="nextWorkItem()") Next Project
