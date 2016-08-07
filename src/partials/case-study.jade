@@ -22,11 +22,13 @@ section.case-study-process.parallax(class="{{cs[params.caseStudyId].parallax}}")
     img(ng-src='{{cs[params.caseStudyId].processRightImg}}')
     p.caption {{cs[params.caseStudyId].processRightImgCaption}}
 
-section(ng-if="cs[params.caseStudyId].caseStudyFooter")
+section
   .build-text-container
     h2.red {{cs[params.caseStudyId].buildProcessHeading}}
     p  {{cs[params.caseStudyId].buildProcessText}}
-.build-process(ng-if="cs[params.caseStudyId].caseStudyFooter")
+    .final-design(ng-if="cs[params.caseStudyId].finalDesign")
+      img(ng-src="img/sandhills/final-design.jpg", alt="")
+.build-process(ng-if="cs[params.caseStudyId].caseStudyFooter" class="{{cs[params.caseStudyId].bgColor}}")
   .build-process-image-container
     img.left-image(ng-src='{{cs[params.caseStudyId].buildProcessLeftImg}}')
     img.right-image(ng-src='{{cs[params.caseStudyId].buildProcessRightImg}}')
@@ -36,11 +38,11 @@ section.conclusion(ng-if="cs[params.caseStudyId].caseStudyFooter")
     h2.red {{cs[params.caseStudyId].conclusionHeading}}
     p  {{cs[params.caseStudyId].conclusionText}}
   .col-50
-    img(-ng-src='{{cs[params.caseStudyId].conclusionImg}}')
+    img(ng-src='{{cs[params.caseStudyId].conclusionImg}}')
     p.conclusion-image-cption {{cs[params.caseStudyId].conclusionImgCaption}}
 
 
-section.case-study-footer(class="{{cs[params.caseStudyId].bgColor}}")
+section.case-study-footer(ng-if="cs[params.caseStudyId].caseStudyFooter" class="{{cs[params.caseStudyId].bgColor}}")
   .amorae-footer-image-container
     img.footer-desktop(ng-if="cs[params.caseStudyId].footerDesktopImg" ng-src='{{cs[params.caseStudyId].footerDesktopImg}}')
     img.footer-iphone(ng-if="cs[params.caseStudyId].footerPhoneImg" ng-src='{{cs[params.caseStudyId].footerPhoneImg}}')
@@ -48,3 +50,10 @@ section.case-study-footer(class="{{cs[params.caseStudyId].bgColor}}")
   .next-prev-buttons
     .btn(ng-click="previousWorkItem()") Previous Project
     .btn(ng-click="nextWorkItem()") Next Project
+    
+section.ux-footer(ng-if="cs[params.caseStudyId].finalDesign" class="{{cs[params.caseStudyId].bgColor}}")
+  .next-prev-buttons
+    .btn(ng-click="previousWorkItem()") Previous Project
+    .btn(ng-click="nextWorkItem()") Next Project
+    
+    

@@ -3,7 +3,7 @@
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
     $routeProvider.
       when("/", {templateUrl:"/partials/home.html"})
-      .when("/case-study/:caseStudyId", {templateUrl:"/partials/amorae-case-study.html"});
+      .when("/case-study/:caseStudyId", {templateUrl:"/partials/case-study.html"});
 
       $locationProvider.html5Mode(true);
 
@@ -42,7 +42,7 @@ function PwController ($scope, $http, $location, $routeParams){
   $scope.nextWorkItem = function() {
     var routeId = $scope.params.caseStudyId;
     routeId++;
-    
+
     if(routeId === 2 || routeId === 4) {
       routeId++;
     }

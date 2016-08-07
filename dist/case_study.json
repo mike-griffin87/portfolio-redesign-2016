@@ -35,7 +35,7 @@
   },
 
   {
-    "bgColor":"plum-bg",
+    "bgColor":"blueviolet-bg",
     "title":"Sandhills Videography",
     "titleImage":"/img/sandhills/title-image.png",
     "role":"UI/UX Design",
@@ -53,6 +53,7 @@
 
     "buildProcessHeading":"The Build Process",
     "buildProcessText":"I built this project using Wordpress and chose the Divi theme because of how simple it's 'drag & drop' builder is for clients. At Slievemore they have both experience and inexperienced staff that will maintain the website so these tools are beneficial to all.",
+    "finalDesign":"finalDesign",
 
     "conclusionHeading":"Conclusion",
     "conclusionText":"Our goals were reached! Slievemore are extremely happy with their new website and we met all their requirments. They have found it super easy to edit content and have had a huge insrease in client engagment. This project was so successful we're now working on a new project together.",

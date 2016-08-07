@@ -48,11 +48,16 @@
 .royalblue-bg {
   background: royalblue; }
 
-.plum-bg {
-  background: Plum; }
+.blueviolet-bg {
+  background: blueviolet; }
 
 .red {
   color: #e74c3c; }
+
+.text-link {
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+  font-weight: 400; }
 
 :root {
   font-size: 20px; }
@@ -898,7 +903,7 @@ footer h5 a {
   .case-study-footer img {
     top: -3rem; } }
 
-.case-study-footer .next-prev-buttons {
+.next-prev-buttons {
   width: 80%;
   margin: 0 auto;
   display: -webkit-box;
@@ -909,19 +914,19 @@ footer h5 a {
   justify-content: center; }
 
 @media screen and (max-width: 640px) {
-  .case-study-footer .next-prev-buttons {
+  .next-prev-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; } }
 
-.case-study-footer .next-prev-buttons .btn {
+.next-prev-buttons .btn {
   margin: 0 2rem;
   text-align: center;
   display: inline-block; }
 
 @media screen and (max-width: 640px) {
-  .case-study-footer .next-prev-buttons .btn {
+  .next-prev-buttons .btn {
     margin: 1rem; } }
 
 .conclusion-image-cption {
@@ -930,6 +935,21 @@ footer h5 a {
   color: #333333;
   font-size: .7rem;
   font-weight: bold; }
+
+.final-design img {
+  width: 60%;
+  margin: 0 auto; }
+
+@media screen and (max-width: 640px) {
+  .final-design img {
+    width: 100%;
+    margin: 0 auto; } }
+
+.ux-footer {
+  background-image: url("img/icon-pattern-footer.png");
+  padding: 5rem 0 5rem 0;
+  margin-top: 2.5rem;
+  position: relative; }
 
 .modal-container {
   background: rgba(0, 0, 0, 0.75);
