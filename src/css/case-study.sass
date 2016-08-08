@@ -113,14 +113,23 @@
     width: 60%
     margin-left: 20%
     z-index: 1
+    display: block
 
     @media screen and (max-width: 768px)
       width: 80%
       margin-left: 10%
 
+    // @media screen and (max-width: 380px)
+    //   width: 100%
+    //   margin-left: 0
+    //   //bottom: -8rem
+
     h2
       color: white
       font-weight: bold
+
+      @media screen and (max-width: 768px)
+        color: $red
 
     p
       background: white

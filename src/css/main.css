@@ -110,6 +110,10 @@ p {
   p {
     font-size: 1.3rem; } }
 
+@media screen and (max-width: 380px) {
+  p {
+    font-size: 1.1rem; } }
+
 .hamburger {
   right: .75rem;
   top: .2rem;
@@ -130,6 +134,14 @@ p {
   position: fixed;
   z-index: 5; }
 
+@media screen and (max-width: 480px) {
+  .hamburger {
+    top: .1rem; } }
+
+@media screen and (max-width: 380px) {
+  .hamburger {
+    top: .3rem; } }
+
 .hamburger .top-bar,
 .hamburger .bottom-bar {
   margin: auto;
@@ -142,6 +154,16 @@ p {
   transition: all 0.45s cubic-bezier(0.45, -0.07, 0.47, 1.71);
   top: 0; }
 
+@media screen and (max-width: 480px) {
+  .hamburger .top-bar,
+  .hamburger .bottom-bar {
+    height: .25rem; } }
+
+@media screen and (max-width: 380px) {
+  .hamburger .top-bar,
+  .hamburger .bottom-bar {
+    height: .3rem; } }
+
 .hamburger .top-bar.nav-is-open {
   top: .8rem;
   -webkit-transform: rotate(45deg);
@@ -149,14 +171,18 @@ p {
   width: 60%; }
 
 .hamburger .bottom-bar.nav-is-open {
-  top: -.55rem;
+  top: -.57rem;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   width: 60%; }
 
+@media screen and (max-width: 480px) {
+  .hamburger .bottom-bar.nav-is-open {
+    top: -.78rem; } }
+
 @media screen and (max-width: 380px) {
   .hamburger .bottom-bar.nav-is-open {
-    top: -.7rem; } }
+    top: -1rem; } }
 
 .hamburger span {
   text-align: center;
@@ -171,6 +197,14 @@ p {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; }
+
+@media screen and (max-width: 480px) {
+  .hamburger span {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 380px) {
+  .hamburger span {
+    font-size: 1.4rem; } }
 
 .hamburger span.nav-is-open {
   opacity: 0;
@@ -202,6 +236,10 @@ nav.isShowing {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1; }
+
+@media screen and (max-width: 380px) {
+  nav {
+    padding: .7rem 6%; } }
 
 @media screen and (max-width: 780px) {
   nav {
@@ -257,6 +295,10 @@ nav ul li a:hover {
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   font-size: 4rem; }
+
+@media screen and (max-width: 380px) {
+  .hero h1 {
+    font-size: 3.5rem; } }
 
 .hero p {
   text-transform: none;
@@ -318,6 +360,10 @@ nav ul li a:hover {
 
 .designer-h1 {
   font-size: 4.8rem; }
+
+@media screen and (max-width: 380px) {
+  .designer-h1 {
+    font-size: 4.3rem; } }
 
 .work-container {
   display: -webkit-box;
@@ -725,7 +771,8 @@ footer h5 a {
   bottom: -3rem;
   width: 60%;
   margin-left: 20%;
-  z-index: 1; }
+  z-index: 1;
+  display: block; }
 
 @media screen and (max-width: 768px) {
   .case-study-process .it-begins-on-paper {
@@ -735,6 +782,10 @@ footer h5 a {
 .case-study-process .it-begins-on-paper h2 {
   color: white;
   font-weight: bold; }
+
+@media screen and (max-width: 768px) {
+  .case-study-process .it-begins-on-paper h2 {
+    color: #e74c3c; } }
 
 .case-study-process .it-begins-on-paper p {
   background: white;

@@ -85,6 +85,9 @@ p
   @media screen and (max-width: 480px)
     font-size: 1.3rem
 
+  @media screen and (max-width: 380px)
+    font-size: 1.1rem
+
 .hamburger
   right: .75rem
   top: .2rem
@@ -98,6 +101,12 @@ p
   position: fixed
   z-index: 5
 
+  @media screen and (max-width: 480px)
+    top: .1rem
+
+  @media screen and (max-width: 380px)
+    top: .3rem
+
   .top-bar,
   .bottom-bar
     margin: auto
@@ -109,6 +118,12 @@ p
     transition: all .45s cubic-bezier(0.45,-0.07, 0.47, 1.71)
     top: 0
 
+    @media screen and (max-width: 480px)
+      height: .25rem
+
+    @media screen and (max-width: 380px)
+      height: .3rem
+
   .top-bar
     &.nav-is-open
       top: .8rem
@@ -117,12 +132,16 @@ p
 
   .bottom-bar
     &.nav-is-open
-      top: -.55rem
+      top: -.57rem
       transform: rotate(-45deg)
       width: 60%
 
+      @media screen and (max-width: 480px)
+        top: -.78rem
+
       @media screen and (max-width: 380px)
-        top: -.7rem
+        top: -1rem
+
   span
     text-align: center
     display: block
@@ -136,14 +155,18 @@ p
     -moz-user-select: none
     -ms-user-select: none
 
+    @media screen and (max-width: 480px)
+      font-size: 1.2rem
+
+    @media screen and (max-width: 380px)
+      font-size: 1.4rem
+
     &.nav-is-open
       opacity: 0
       transform: translateX(10px)
 
 .nav-container
   position: absolute
-
-.main-nav
 
 nav
   width: 100%
@@ -159,6 +182,9 @@ nav
   &.isShowing
     transform: translateY(0)
     opacity: 1
+
+  @media screen and (max-width: 380px)
+    padding: .7rem 6%
 
   @media screen and (max-width: 780px)
     justify-content: flex-start

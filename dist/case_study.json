@@ -40,25 +40,20 @@
     "titleImage":"/img/sandhills/title-image.png",
     "role":"UI/UX Design",
 
-    "challengeText":"",
+    "challengeText":"I was contact by a developer across the pond to colaborate on a project together. I was assigned the task of redesiging a website with the main goal being easy to use and navigate. It was a short notice job so I had 2 days to submit a design.",
 
     "parallax":"sandhills-parallax",
     "processHeading":"Discovery Stage",
-    "processText":"",
+    "processText":"Like all most of my projects I started on paper. Going through the old website I filtered out the unessary information and detailed what is important for the users experience. I used Sketch app for the design and presented the final design explaiing my deciaions behind each section.",
 
     "processLeftImg":"/img/sandhills/wireframe.jpg",
-    "processLeftImgCaption":"Wireframes",
+    "processLeftImgCaption":"Paper wireframs",
     "processRightImg":"/img/sandhills/design-sketch-app.jpg",
-    "processRightImgCaption":"Designed using Sketch",
+    "processRightImgCaption":"Design in Sketch",
 
-    "buildProcessHeading":"The Build Process",
-    "buildProcessText":"I built this project using Wordpress and chose the Divi theme because of how simple it's 'drag & drop' builder is for clients. At Slievemore they have both experience and inexperienced staff that will maintain the website so these tools are beneficial to all.",
-    "finalDesign":"finalDesign",
-
-    "conclusionHeading":"Conclusion",
-    "conclusionText":"Our goals were reached! Slievemore are extremely happy with their new website and we met all their requirments. They have found it super easy to edit content and have had a huge insrease in client engagment. This project was so successful we're now working on a new project together.",
-    "conclusionImg":"/img/slievemore/conclusion.gif",
-    "conclusionImgCaption":"Slievemore photo gallery"
+    "buildProcessHeading":"The Finished design",
+    "buildProcessText":"I finished the project well within the deadline and we had time to revisit sections of the site and tweak where neccessary See completed design below.",
+    "finalDesign":"finalDesign"
   },
 
   {},
