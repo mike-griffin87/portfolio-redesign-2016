@@ -1,57 +1,57 @@
-.top-slant(class="{{cs[params.caseStudyId].bgColor}}")
+.top-slant(class="{{cs[workIds[params.caseStudyId]].bgColor}}")
 section.case-study-header
-  h1 {{cs[params.caseStudyId].title}}
-  img(ng-src='{{cs[params.caseStudyId].titleImage}}')
-  h2.red {{cs[params.caseStudyId].role}}
+  h1 {{cs[workIds[params.caseStudyId]].title}}
+  img(ng-src='{{cs[workIds[params.caseStudyId]].titleImage}}')
+  h2.red {{cs[workIds[params.caseStudyId]].role}}
 
 section.case-study-challenge
   h2.red Challenge
-  p {{cs[params.caseStudyId].challengeText}}
+  p {{cs[workIds[params.caseStudyId]].challengeText}}
 
-section.case-study-process.parallax(class="{{cs[params.caseStudyId].parallax}}")
+section.case-study-process.parallax(class="{{cs[workIds[params.caseStudyId]].parallax}}")
   .it-begins-on-paper
-    h2 {{cs[params.caseStudyId].processHeading}}
+    h2 {{cs[workIds[params.caseStudyId]].processHeading}}
     .p-container
-      p {{cs[params.caseStudyId].processText}}
+      p {{cs[workIds[params.caseStudyId]].processText}}
 
 .userflow
   .col-50
-    img(ng-src='{{cs[params.caseStudyId].processLeftImg}}')
-    p.caption {{cs[params.caseStudyId].processLeftImgCaption}}
+    img(ng-src='{{cs[workIds[params.caseStudyId]].processLeftImg}}')
+    p.caption {{cs[workIds[params.caseStudyId]].processLeftImgCaption}}
   .col-50
-    img(ng-src='{{cs[params.caseStudyId].processRightImg}}')
-    p.caption {{cs[params.caseStudyId].processRightImgCaption}}
+    img(ng-src='{{cs[workIds[params.caseStudyId]].processRightImg}}')
+    p.caption {{cs[workIds[params.caseStudyId]].processRightImgCaption}}
 
 section
   .build-text-container
-    h2.red {{cs[params.caseStudyId].buildProcessHeading}}
-    p  {{cs[params.caseStudyId].buildProcessText}}
-    .final-design(ng-if="cs[params.caseStudyId].finalDesign")
+    h2.red {{cs[workIds[params.caseStudyId]].buildProcessHeading}}
+    p  {{cs[workIds[params.caseStudyId]].buildProcessText}}
+    .final-design(ng-if="cs[workIds[params.caseStudyId]].finalDesign")
       img(ng-src="img/sandhills/final-design.jpg", alt="")
-.build-process(ng-if="cs[params.caseStudyId].caseStudyFooter" class="{{cs[params.caseStudyId].bgColor}}")
+.build-process(ng-if="cs[workIds[params.caseStudyId]].caseStudyFooter" class="{{cs[workIds[params.caseStudyId]].bgColor}}")
   .build-process-image-container
-    img.left-image(ng-src='{{cs[params.caseStudyId].buildProcessLeftImg}}')
-    img.right-image(ng-src='{{cs[params.caseStudyId].buildProcessRightImg}}')
+    img.left-image(ng-src='{{cs[workIds[params.caseStudyId]].buildProcessLeftImg}}')
+    img.right-image(ng-src='{{cs[workIds[params.caseStudyId]].buildProcessRightImg}}')
 
-section.conclusion(ng-if="cs[params.caseStudyId].caseStudyFooter")
+section.conclusion(ng-if="cs[workIds[params.caseStudyId]].caseStudyFooter")
   .col-50
-    h2.red {{cs[params.caseStudyId].conclusionHeading}}
-    p  {{cs[params.caseStudyId].conclusionText}}
+    h2.red {{cs[workIds[params.caseStudyId]].conclusionHeading}}
+    p  {{cs[workIds[params.caseStudyId]].conclusionText}}
   .col-50
-    img(ng-src='{{cs[params.caseStudyId].conclusionImg}}')
-    p.conclusion-image-cption {{cs[params.caseStudyId].conclusionImgCaption}}
+    img(ng-src='{{cs[workIds[params.caseStudyId]].conclusionImg}}')
+    p.conclusion-image-cption {{cs[workIds[params.caseStudyId]].conclusionImgCaption}}
 
 
-section.case-study-footer(ng-if="cs[params.caseStudyId].caseStudyFooter" class="{{cs[params.caseStudyId].bgColor}}")
+section.case-study-footer(ng-if="cs[workIds[params.caseStudyId]].caseStudyFooter" class="{{cs[workIds[params.caseStudyId]].bgColor}}")
   .amorae-footer-image-container
-    img.footer-desktop(ng-if="cs[params.caseStudyId].footerDesktopImg" ng-src='{{cs[params.caseStudyId].footerDesktopImg}}')
-    img.footer-iphone(ng-if="cs[params.caseStudyId].footerPhoneImg" ng-src='{{cs[params.caseStudyId].footerPhoneImg}}')
-    img.footer-ipad(ng-if="cs[params.caseStudyId].footerIpadImg" ng-src='{{cs[params.caseStudyId].footerIpadImg}}')
+    img.footer-desktop(ng-if="cs[workIds[params.caseStudyId]].footerDesktopImg" ng-src='{{cs[workIds[params.caseStudyId]].footerDesktopImg}}')
+    img.footer-iphone(ng-if="cs[workIds[params.caseStudyId]].footerPhoneImg" ng-src='{{cs[workIds[params.caseStudyId]].footerPhoneImg}}')
+    img.footer-ipad(ng-if="cs[workIds[params.caseStudyId]].footerIpadImg" ng-src='{{cs[workIds[params.caseStudyId]].footerIpadImg}}')
   .next-prev-buttons
     .btn(ng-click="previousWorkItem()") Previous Project
     .btn(ng-click="nextWorkItem()") Next Project
     
-section.ux-footer(ng-if="cs[params.caseStudyId].finalDesign" class="{{cs[params.caseStudyId].bgColor}}")
+section.ux-footer(ng-if="cs[workIds[params.caseStudyId]].finalDesign" class="{{cs[workIds[params.caseStudyId]].bgColor}}")
   .next-prev-buttons
     .btn(ng-click="previousWorkItem()") Previous Project
     .btn(ng-click="nextWorkItem()") Next Project
