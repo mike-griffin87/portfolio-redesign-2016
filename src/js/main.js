@@ -1,5 +1,5 @@
   angular.module('personalWebsite',['ngRoute'])
-  .controller('pwController', ['$scope', '$http', '$location', '$routeParams',  PwController])
+  .controller('pwController', ['$scope', '$http', '$location', '$routeParams', '$interval',  PwController])
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
     $routeProvider.
       when("/", {templateUrl:"/partials/home.html"})
@@ -9,7 +9,23 @@
 
   }]);
 
-function PwController ($scope, $http, $location, $routeParams){
+function PwController ($scope, $http, $location, $routeParams, $interval){
+
+  $scope.workIds = {
+    amoraebridal: 0,
+    sandhillsvideography: 1,
+    marshmallowandmammy: 3,
+    slievemoreclinic: 5
+  };
+  $scope.workTitles = [
+    'amoraebridal',
+    'sandhillsvideography',
+      '',
+    'marshmallowandmammy',
+      '',
+    'slievemoreclinic'
+  ];
+
   $scope.params=$routeParams;
   $scope.test = "Designer";
   $scope.showNav = false;
@@ -40,7 +56,7 @@ function PwController ($scope, $http, $location, $routeParams){
   };
 
   $scope.nextWorkItem = function() {
-    var routeId = $scope.params.caseStudyId;
+    var routeId = $scope.workIds[ $scope.params.caseStudyId ];
     routeId++;
 
     if(routeId === 2 || routeId === 4) {
@@ -50,12 +66,11 @@ function PwController ($scope, $http, $location, $routeParams){
     if(routeId >= 6) {
       routeId = 0;
     }
-
-    $scope.go('/case-study/' + routeId);
+    $scope.go('/case-study/' + $scope.getRouteName(routeId));
   };
 
   $scope.previousWorkItem = function() {
-    var routeId = $scope.params.caseStudyId;
+    var routeId = $scope.workIds[ $scope.params.caseStudyId ];
     routeId--;
 
     if(routeId === 2 || routeId === 4) {
@@ -65,8 +80,21 @@ function PwController ($scope, $http, $location, $routeParams){
     if(routeId <= -1) {
       routeId = 5;
     }
+    $scope.go('/case-study/' + $scope.getRouteName(routeId));
+  };
 
-    $scope.go('/case-study/' + routeId);
+  $scope.getRouteName = function(rId) {
+    return $scope.workTitles[rId];
+  };
+  
+  $scope.goToSection = function(id) {
+    $scope.go('/');
+    var check = $interval(function() {
+        if(angular.element(document.querySelector(id))[0]) {
+          $('html,body').animate({scrollTop: $(id).offset().top}, 450);
+          $interval.cancel(check);
+        }
+    }, 100);
   };
 
 } //PwController Close
