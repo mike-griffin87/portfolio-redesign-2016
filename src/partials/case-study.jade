@@ -26,6 +26,7 @@ section
   .build-text-container
     h2.red {{cs[workIds[params.caseStudyId]].buildProcessHeading}}
     p  {{cs[workIds[params.caseStudyId]].buildProcessText}}
+    q.quote(ng-if="cs[workIds[params.caseStudyId]].finalDesign") {{cs[workIds[params.caseStudyId]].quote}}
     .final-design(ng-if="cs[workIds[params.caseStudyId]].finalDesign")
       img(ng-src="img/sandhills/final-design.jpg", alt="")
 .build-process(ng-if="cs[workIds[params.caseStudyId]].caseStudyFooter" class="{{cs[workIds[params.caseStudyId]].bgColor}}")

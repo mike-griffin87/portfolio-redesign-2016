@@ -283,6 +283,19 @@ nav ul li a:hover {
   background: #eee;
   box-shadow: 0.2rem 0.2rem 1rem rgba(34, 34, 34, 0.5); }
 
+.quote {
+  display: inline-block;
+  width: 50%;
+  font-weight: 500;
+  font-size: .8rem;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0 4rem 0; }
+
+@media screen and (max-width: 780px) {
+  .quote {
+    width: 90%; } }
+
 .hero {
   width: 100%;
   height: 100vh;

@@ -5,12 +5,12 @@
     "titleImage":"/img/amorae/desktop-homepage-mock-up.png",
     "role":"Design & Development",
 
-    "challengeText":"Amorae Bridal is an award winning bridal shop located in Essex. They needed a fully responsive website that would showcase their products and allow customers to contact them. Their only project requirements was the use of Edwardian script font,  brand colours and to somehow include their clients wedding photos.",
+    "challengeText":"Amorae Bridal is an award winning bridal shop located in Essex. Amorae wanted a responsive web solution that would allow their clients to easily get in touch. It was also important for them to feature pictures of their clients weddings on their site.",
 
     "parallax":"amorae-parallax",
     "processHeading":"It begins on paper",
 
-    "processText":"The discovery stage is the most important step in the process. This is where I list out the needs, wants and requirements of the client and work out how many pages/panels are needed. The next step of the discovery process is to wirefram numerous versions of each page until a decision has been made. The final step is to mock up a user flow to envision how the user will use the site and how each journey can differ.",
+    "processText":"The discovery stage is the most important step in the process. This generally starts on paper and outlines the who, what and why. Who will be using this product, why they will use this product and what they will get from it. Once established I moved onto wireframes, user-flow and design.",
 
     "processLeftImg":"/img/amorae/wireframe-sketch.jpg",
     "processLeftImgCaption":"Landing page discovery process",
@@ -18,16 +18,16 @@
     "processRightImgCaption":"User flow and experience",
 
     "buildProcessHeading":"The Build Process",
-    "buildProcessText":"The discovery stage revealed that each of the products page will have the same layout. I used a HTML template for the product pages so that any changes to the layout would take place across the entire site.",
+    "buildProcessText":"The discovery stage revealed that each of the products page will have the same layout. This lead my decision to use a HTML template for each the product pages which allowed for super easy maintenance.",
 
     "buildProcessLeftImg":"/img/amorae/code-window.png",
     "buildProcessRightImg":"/img/amorae/page-in-browser.png",
 
     "caseStudyFooter":"caseStudyFooter",
     "conclusionHeading":"The icing on the cake",
-    "conclusionText":"We explored several options to include photos of Amorae brides on their wedding day. A you can see from the image we built a fullscreen image carousel for the homepage. This cycles through each over the bridal photos in a specific order chosen by Amorae. For each of the designers pages we chose a static fullscreen background image over the carousel as we felt the constant animation woild distract from the main content. (Animated image is sped up.)",
+    "conclusionText":"Amorae wanted to maintain a positive relationship with their clients after their wedding. We built the homepage as a fullscreen image carousel populated with images of their brides. This gave Amorae an opportunity to keep in touch and also promote their website long after their clients wedding. Amorae are delighted with their new website and we're continuing to work together.",
     "conclusionImg":"/img/amorae/ipad-animate.gif",
-    "conclusionImgCaption":"Example of fullscreen background carousel",
+    "conclusionImgCaption":"Example of fullscreen background carousel (speed x 2)",
 
     "footerDesktopImg":"/img/amorae/desktop-mock-up.png",
     "footerPhoneImg":"/img/amorae/iphone-mock-up.png",
@@ -40,19 +40,20 @@
     "titleImage":"/img/sandhills/title-image.png",
     "role":"UI/UX Design",
 
-    "challengeText":"I was contact by a developer across the pond to colaborate on a project together. I was assigned the task of redesiging a website with the main goal being easy to use and navigate. It was a short notice job so I had 2 days to submit a design.",
+    "challengeText":"I was in contacted with a developer from California who asked me to collaborate on a project. I was asked to redesign an 9 page website and condense it into a one page responsive experience. Communication was difficult with the time difference so we scheduled a couple of skype calls to discuss the project.",
 
     "parallax":"sandhills-parallax",
     "processHeading":"Discovery Stage",
-    "processText":"Like all most of my projects I started on paper. Going through the old website I filtered out the unessary information and detailed what is important for the users experience. I used Sketch app for the design and presented the final design explaiing my deciaions behind each section.",
+    "processText":"As with most of my projects I started on paper. I went through the old website and labeled each section of content in order of importance. We discussed and tweaked our wireframes on paper and finalised the design in Sketch.",
 
     "processLeftImg":"/img/sandhills/wireframe.jpg",
     "processLeftImgCaption":"Paper wireframes",
     "processRightImg":"/img/sandhills/design-sketch-app.jpg",
     "processRightImgCaption":"Design in Sketch",
 
-    "buildProcessHeading":"The Finished design",
-    "buildProcessText":"I finished the project well within the deadline and we had time to revisit sections of the site and tweak where neccessary See completed design below.",
+    "buildProcessHeading":"The Final design",
+    "buildProcessText":"The finished product. Both Mark (the developer) and I are really happy with the completed design. Mark presented it to the client and received some superb feedback.",
+    "quote":"Absolutely love it! You guys have been awesome to work with, this is everything I hoped for and more. I've already had enquiries from my website and I have you guys to thank.",
     "finalDesign":"finalDesign"
   },
 
@@ -68,7 +69,7 @@
 
     "parallax":"marshmallow-parallax",
     "processHeading":"Good old pen & paper",
-    "processText":"Preperation is key, especially with a 24 hour deadline. This required a short research & development stage. I set aside 2 hours for research, wireframes and design. I wanted the site to be colourful, simple to navigate and engaging for the user.",
+    "processText":"Preparation is key, especially with a 24 hour deadline. This required a short research & development stage. I set aside 2 hours for research, wireframes and design. I wanted the site to be colourful, simple to navigate and engaging for the user.",
 
     "processLeftImg":"/img/marshmallow-and-mammy/wireframe-sketch.jpg",
     "processLeftImgCaption":"Research & final wireframes",
@@ -76,7 +77,7 @@
     "processRightImgCaption":"UI design using Sketch",
 
     "buildProcessHeading":"The Build Process",
-    "buildProcessText":"I built this project as a SPA (single page application), this allowed me to easily increase the performance and keep load times to a minimum. I used json files to maintain the applications data and Angular directives/components to create modular/reusable content sections.",
+    "buildProcessText":"I built this project as a SPA (single page application), this allowed me to increase the performance and keep load times to a minimum. I used json files to maintain the applications data and Angular directives/components to create modular/reusable content sections.",
 
     "buildProcessLeftImg":"/img/marshmallow-and-mammy/build-process-left.jpg",
     "buildProcessRightImg":"/img/marshmallow-and-mammy/build-process-right.jpg",
@@ -100,11 +101,11 @@
     "titleImage":"/img/slievemore/title-image-mock-up.png",
     "role":"Design & Development",
 
-    "challengeText":"Slievemore Clinic is a modern, multi-disciplinary healthcare facility based in Ireland. The goal for this project was to create an easy to use and friendly experience for all their users. Slievemore houses 16+ clinics that are all accessed by different types of users, This was important to keep in mind during the discovery stage. Slievemore also request a simple content management system that will allow them to keep their website up to date.",
+    "challengeText":"Slievemore Clinic is a modern, multi-disciplinary healthcare facility based in Ireland. The goal for this project was to create an easy to use website and a friendly experience for all. Slievemore houses 16+ clinics that are all accessed by different types of users, This was a key factor during the discovery stage. Slievemore also wanted to maintain and edit the website themselves, this called for a friendly CMS.",
 
     "parallax":"slievemore-parallax",
     "processHeading":"Discovery Stage",
-    "processText":"Like the majority of my projects this one started on pen and paper. It was very important to the Slievemore team to have a mobile friendly website. With this in mind I decided take the 'mobile first' approach and start wireframing the mobile version of the site and build on it with each revision.",
+    "processText":"Like the majority of my projects this one started with pen and paper. It was very important to the Slievemore team to have a mobile friendly website. With this in mind I decided to take the 'mobile first' approach and start wireframing the mobile version of the site and build on it with each revision.",
 
     "processLeftImg":"/img/slievemore/mobile-first-sketch.jpg",
     "processLeftImgCaption":"Mobile first wireframes",
@@ -112,14 +113,14 @@
     "processRightImgCaption":"Early desktop wireframes",
 
     "buildProcessHeading":"The Build Process",
-    "buildProcessText":"I built this project using Wordpress and chose the Divi theme because of how simple it's 'drag & drop' builder is for clients. At Slievemore they have both experience and inexperienced staff that will maintain the website so these tools are beneficial to all.",
+    "buildProcessText":"I built this project using Wordpress and chose the Divi theme because of how simple it's 'drag & drop' builder is for clients. At Slievemore they have both experienced and inexperienced staff that will maintain the website so these elements are beneficial to all.",
 
     "buildProcessLeftImg":"/img/slievemore/build-process-left.png",
     "buildProcessRightImg":"/img/slievemore/build-process-right.png",
 
     "caseStudyFooter":"caseStudyFooter",
     "conclusionHeading":"Conclusion",
-    "conclusionText":"Our goals were reached! Slievemore are extremely happy with their new website and we met all their requirments. They have found it super easy to edit content and have had a huge insrease in client engagment. This project was so successful we're now working on a new project together.",
+    "conclusionText":"Our goals were reached! Slievemore are extremely happy with their new website and we met all their requirements. They have found it super easy to edit content and have had a huge increase in client engagement. This project was so successful we're now working on a new project together.",
     "conclusionImg":"/img/slievemore/conclusion.gif",
     "conclusionImgCaption":"Slievemore photo gallery",
 
