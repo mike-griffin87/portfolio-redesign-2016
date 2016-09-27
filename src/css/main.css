@@ -347,7 +347,6 @@ nav ul li a:hover {
   .hero-heading-container {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
     align-items: center;
     padding: 0; } }
 
@@ -548,13 +547,14 @@ nav ul li a:hover {
   font-weight: bold; }
 
 .social-container {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem auto 0 auto;
-  padding: 2rem 0 0 0;
-  text-align: center; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2rem 0 0 0; }
 
 @media screen and (max-width: 360px) {
   .social-container {
