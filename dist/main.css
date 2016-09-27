@@ -347,6 +347,7 @@ nav ul li a:hover {
   .hero-heading-container {
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -ms-grid-row-align: center;
     align-items: center;
     padding: 0; } }
 
